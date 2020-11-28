@@ -24,14 +24,12 @@ cd package
 git clone https://github.com/destan19/OpenAppFilter.git
 cd -
 
-# Delete SFE
-rm package/lean/luci-app-flowoffload -fr
-rm package/lean/shortcut-fe/ -fr
-rm package/lean/luci-app-sfe/ -fr
-
 # Add Argon Theme
 cd package/lean
 rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 cd ..
 cd ..
+
+#Add DarkMatter Theme
+sed -i '$a src-git darkmatter git://github.com/apollo-ng/luci-theme-darkmatter.git' feeds.conf.default
