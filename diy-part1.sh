@@ -25,12 +25,6 @@ cd package
 git clone https://github.com/destan19/OpenAppFilter.git
 cd -
 
-# Add Argon Theme
-cd package/lean
-rm -rf luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
-cd ..
-cd ..
 
 #Add DarkMatter Theme
 sed -i '$a src-git darkmatter git://github.com/apollo-ng/luci-theme-darkmatter.git' feeds.conf.default
