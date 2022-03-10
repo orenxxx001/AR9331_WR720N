@@ -19,6 +19,10 @@ sed -i 's/192.168.1.1/192.168.88.8/g' package/base-files/files/bin/config_genera
 # 修改hostname
 sed -i 's/OpenWrt/XinV-2.0/g' package/base-files/files/bin/config_generate
 
+# 替换默认主题为 luci-theme-darkmatter
+sed -i 's/luci-theme-bootstrap/luci-theme-darkmatter/g' feeds/luci/collections/luci/Makefile
+
+
 wifi_name='RR'
 wifi_encryption='psk2'
 wifi_password='23456789DDop'
