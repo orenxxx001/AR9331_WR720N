@@ -17,8 +17,9 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-sed -i '$a src-git ifit https://github.com/kenzok8/luci-theme-ifit.git' feeds.conf.default
 sed -i '$a src-git openwrt https://github.com/openwrt/openwrt' feeds.conf.default
+sed -i '$a src-git darkmatter https://github.com/apollo-ng/luci-theme-darkmatter.git' feeds.conf.default
+
 
 # Add OpenAppFilter
 cd package
@@ -27,4 +28,3 @@ cd -
 
 
 #Add DarkMatter Theme
-sed -i '$a src-git darkmatter git://github.com/apollo-ng/luci-theme-darkmatter.git' feeds.conf.default
