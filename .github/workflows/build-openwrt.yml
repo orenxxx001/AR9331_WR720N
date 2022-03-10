@@ -22,7 +22,7 @@ on:
 #    - cron: 0 8 * * 5
 
 env:
-  REPO_URL: https://github.com/Mcxunyun666/lede.git
+  REPO_URL: https://github.com/orenxxx001/openwrt.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
